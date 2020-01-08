@@ -14,7 +14,7 @@
                 <p>30k to 50k</p>
                 <p><b>Job Location :</b> </p>
                 <p>Banani, Dhaka</p>
-                <b-button variant="outline-primary">Apply</b-button>
+                <b-button v-on:click="apply" variant="outline-primary">Apply</b-button>
             </b-col>
 
             <b-col cols="12">
@@ -27,7 +27,7 @@
                 <p>30k to 50k</p>
                 <p><b>Job Location :</b> </p>
                 <p>Banani, Dhaka</p>
-                <b-button variant="outline-primary">Apply</b-button>
+                <b-button v-on:click="apply" variant="outline-primary">Apply</b-button>
             </b-col>
 
             </b-row>
@@ -40,9 +40,12 @@
 
 <script>
 export default {
-    data(){
-
-    },
+    
+    methods:{
+        apply:function(){
+            alert('you are successfuly apply for this job');
+        }
+    }
 }
 </script>
 
@@ -64,4 +67,5 @@ p{
 .jobs{
     padding-top: 20px;
 }
+
 </style>
